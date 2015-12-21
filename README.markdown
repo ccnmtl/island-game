@@ -19,20 +19,42 @@ var islandGame = require('island-game');
 var jQuery = require('jquery');
 
 var islandView = new islandGame.IslandGameView({
-model: new islandGame.IslandGame(
-    {beforeMedication: true}),
+    model: new islandGame.IslandGame({
+        beforeMedication: true}),
         el: 'div#island_container',
-		gender: jQuery('div#gender').html(),
-        mode: jQuery('div#mode').html()
+		gender: 'F',
+        mode: 'after-medication'
     });
 ```
 
-Make sure you have webpack configured to use `css-loader`:
+Put some scaffold HTML elements in place:
 
 ```
+    <div id="island_container" class="island-container"></div>
+```
+
+configure webpack:
+
+```
+    entry: [
+        "./media/island-game-entrypoint.js",
+	],
     ...
     module: {
         loaders: [
             { test: /\.css$/, loader: 'style-loader!css-loader' },
     ...
 ```
+
+```
+$ webpack --config webpack.config.js
+```
+
+### Todo
+
+* [ ] construct required DOM elements automatically. Basically
+  everything in
+  [here](https://github.com/ccnmtl/smart_sa/blob/master/smart_sa/island_game/templates/island_game/island.html)
+* [ ] tests
+* [ ] publish to npm
+* [ ] image path fixes in js and css
