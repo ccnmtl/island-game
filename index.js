@@ -3,8 +3,6 @@ var Backbone = require('backbone');
 var _ = require('underscore');
 require('jquery-ui/draggable');
 
-var global = this;
-
 var GameElement = Backbone.Model.extend({
     defaults: {
         name: '',
