@@ -432,12 +432,5 @@ Backbone.sync = function(method, model, success, error) {
     // Island View State is not saved
 };
 
-jQuery(document).ready(function() {
-    var islandView = new IslandGameView({
-        model: new IslandGame({beforeMedication: true}),
-        el: 'div#island_container',
-        gender: jQuery('div#gender').html(),
-        mode: jQuery('div#mode').html()
-    });
-});
-
+exports.IslandGame = IslandGame;
+exports.IslandGameView = IslandGameView;

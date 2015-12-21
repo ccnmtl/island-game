@@ -15,11 +15,12 @@ driven development):
 make an entrypoint .js file somewhere:
 
 ```
-var islandGame = require('island-game');
+var model = require('island-game').IslandGame;
+var view = require('island-game').IslandGameView;
 var jQuery = require('jquery');
 
-var islandView = new islandGame.IslandGameView({
-    model: new islandGame.IslandGame({
+var islandView = new view({
+    model: new model({
         beforeMedication: true}),
         el: 'div#island_container',
 		gender: 'F',
