@@ -1,0 +1,21 @@
+{
+  "name": "island-game",
+  "version": "0.0.0",
+  "description": "Masivukeni Island Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CCNMTL",
+  "license": "BSD-2-Clause",
+  "files": [
+    "css",
+    "images"
+  ],
+  "dependencies": {
+    "jquery-ui": "~1.10.5",
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.3",
+    "jquery": "~2.1.4"
+  }
+}
