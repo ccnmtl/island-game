@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true,  // Tells ESLint our module is running inside a Node.js environment
+    "es6": true    // and it's using ES6 syntax
+  },
+  "rules": {
+    "no-eval": 1,  // returns a warning when `eval` function is used
+    "quotes": [2, "single"],  // returns error when double quotes is used
+    "semi": [2, "always"],  // returns error when you forget a semicolon
+    "sort-vars": 0  // does not care if your variables aren't ordered alphabetically
+  }
+}
