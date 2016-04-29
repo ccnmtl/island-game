@@ -1,3 +1,5 @@
+'use strict';
+
 var Backbone = require('backbone');
 
 module.exports.GameElement = Backbone.Model.extend({
