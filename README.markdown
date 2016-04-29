@@ -44,7 +44,8 @@ configure webpack:
     module: {
         loaders: [
             { test: /\.css$/, loader: 'style-loader!css-loader' },
-    ...
+            { test: /\.png/, loader: 'file' },
+...
 ```
 
 ```
