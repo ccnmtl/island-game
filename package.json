@@ -1,6 +1,6 @@
 {
   "name": "island-game",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Masivukeni Island Game",
   "main": "dist/index.js",
   "repository": "https://github.com/ccnmtl/island-game/",
