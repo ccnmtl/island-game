@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Masivukeni Island Game",
   "main": "src/index.js",
+  "repository": "https://github.com/ccnmtl/island-game/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
