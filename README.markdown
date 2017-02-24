@@ -1,5 +1,7 @@
 ## Masivukeni Island Game
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ccnmtl/island-game.svg)](https://greenkeeper.io/)
+
 Packaging the Island Game activity from
 [Masivukeni](https://github.com/ccnmtl/smart_sa/) as a reusable
 javascript library.
